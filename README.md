@@ -6,7 +6,7 @@ containerized website to it, also with Terraform. You write every piece yourself
 a managed node group, EKS add-ons, ECR, and the Kubernetes Deployment, Service, autoscaler and
 disruption budget.
 
-> Compare with [Deploy a Website to Amazon EKS](https://github.com/KwakuAdae/kwakuadae-aws-eks-website-lab),
+> Compare with [Deploy a Website to Amazon EKS](https://github.com/KwakuAdae/aws-eks-website-lab),
 > which builds the same kind of cluster with **eksctl** and deploys with **kubectl + YAML**.
 > Here, all of it is Terraform code you can read, review, version and destroy in one command.
 
@@ -287,7 +287,7 @@ destroy the cluster first, the NLB is orphaned and blocks VPC deletion.
 - **Karpenter** for node autoscaling
 - **CI/CD**: `terraform plan` on pull requests, `apply` on merge (GitHub Actions + OIDC)
 - Refactor `1-infra` into reusable **modules** (`modules/vpc`, `modules/eks`)
-- Sister labs: [EKS with eksctl](https://github.com/KwakuAdae/kwakuadae-aws-eks-website-lab) ·
+- Sister labs: [EKS with eksctl](https://github.com/KwakuAdae/aws-eks-website-lab) ·
   [EKS microservices](https://github.com/KwakuAdae/aws-eks-microservices-lab) ·
   [CloudWatch Logs + Terraform](https://github.com/KwakuAdae/aws-cloudwatch-logs-terraform-lab) ·
   [Advanced Fargate](https://github.com/KwakuAdae/aws-ecs-fargate-advanced-lab)
