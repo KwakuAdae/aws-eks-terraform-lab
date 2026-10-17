@@ -1,0 +1,6 @@
+# cp terraform.tfvars.example terraform.tfvars   and edit as needed
+aws_region          = "us-east-1"
+cluster_name        = "eks-tf-lab"
+kubernetes_version  = "1.31"
+node_instance_types = ["t3.medium"]
+node_desired_size   = 2
